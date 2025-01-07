@@ -1,0 +1,61 @@
+---
+import Layout from "@/layouts/Layout.astro"
+
+import AboutMe from "@/components/AboutMe.astro"
+import Briefcase from "@/components/icons/Briefcase.astro"
+import CodeIcon from "@/components/icons/Code.astro"
+import Experience from "@/components/Experience.astro"
+import ProfileCheck from "@/components/icons/ProfileCheck.astro"
+import Projects from "@/components/Projects.astro"
+import SectionContainer from "@/components/SectionContainer.astro"
+import Hero from "@/components/Hero.astro"
+import TitleSection from "@/components/TitleSection.astro"
+import ContactPill from "@/components/icons/Mail.astro"
+import ContactForm from "@/components/ContactForm.astro"
+---
+
+<Layout
+  title="Portfolio of Julian Simon - QA Analyst and Developer with 5+ years of experience."
+  description="Hire Julian Simon to create your web or mobile application. QA Analyst, PM, and Web Developer. Specialized in building unique applications with a strong focus on the highest quality possible."
+>
+  <main class="px-4">
+    <SectionContainer class="py-16 md:py-36">
+      <Hero>
+      </slot>
+    </Hero>
+    </SectionContainer>
+    <div class="space-y-24">
+    <SectionContainer id="experience">
+      <TitleSection>
+        <Briefcase class="size-8" />
+        Work Experience
+      </TitleSection>
+      <Experience />
+    </SectionContainer>
+
+    <SectionContainer id="projects">
+      <TitleSection>
+        <CodeIcon class="size-7" />
+        Projects
+      </TitleSection>
+      <Projects />
+    </SectionContainer>
+
+    <SectionContainer id="about-me">
+      <TitleSection>
+        <ProfileCheck class="size-8" />
+        About Me
+      </TitleSection>
+      <AboutMe />
+    </SectionContainer>
+
+    <SectionContainer id="contact">
+      <TitleSection>
+        <ContactPill class="size-8"/>
+        Contact Me
+      </TitleSection>
+      <ContactForm />
+    </SectionContainer>
+  </div>
+  </main>
+</Layout>
