@@ -11,11 +11,11 @@ import ContactPill from "./ContactPill.astro"
 <div class="max-w-xl">
   <div class="flex gap-4 mb-4">
     <img
-      class="rounded-full shadow-lg size-16"
+      class="rounded-full z-10 shadow-lg size-16 ring-2 ring-cyan-500 dark:ring-indigo-400"
       src="/juliansimon-01.webp"
       alt={personalImageAlt}
-    />
-    <a
+      />
+      <a
       href="/#contact"
       rel="noopener"
       class="flex items-center transition md:justify-center md:hover:scale-105"
@@ -29,7 +29,7 @@ import ContactPill from "./ContactPill.astro"
     Hi!👋 I'm Julian Simon
   </h1>
   <p
-    class="mt-6 text-xl text-gray-800 dark:[&>strong]:text-yellow-200 [&>strong]:text-yellow-500 [&>strong]:font-semibold dark:text-gray-300"
+    class="mt-6 text-xl text-gray-800 dark:[&>strong]:text-blue-800 [&>strong]:text-blue-500 [&>strong]:font-semibold dark:text-gray-300"
   >
   5+ years of experience. <strong
       >QA Analyst and Developer</strong
