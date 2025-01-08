@@ -1,5 +1,5 @@
 {
-  "name": "porfolio-dev",
+  "name": "porfolio-qa",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -7,9 +7,7 @@
     "start": "astro dev",
     "build": "astro check && astro build",
     "preview": "astro preview",
-    "astro": "astro",
-    "redeploy": "gh-pages build",
-    "deploy": "gh-pages -d dist"
+    "astro": "astro"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
@@ -18,10 +16,8 @@
     "astro": "^5.1.2",
     "astro-robots-txt": "^1.0.0",
     "porfolio-dev": "file:",
+    "porfolio-qa": "file:",
     "tailwindcss": "^3.4.1",
     "typescript": "^5.3.3"
-  },
-  "devDependencies": {
-    "gh-pages": "^6.3.0"
   }
 }
