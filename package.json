@@ -1,5 +1,5 @@
 {
-  "name": "porfolio-qa",
+  "name": "portfolio-qa",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -15,8 +15,7 @@
     "@fontsource-variable/onest": "^5.0.2",
     "astro": "^5.1.2",
     "astro-robots-txt": "^1.0.0",
-    "porfolio-dev": "file:",
-    "porfolio-qa": "file:",
+    "portfolio-qa": "file:",
     "tailwindcss": "^3.4.1",
     "typescript": "^5.3.3"
   }
