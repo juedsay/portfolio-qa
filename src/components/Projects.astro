@@ -4,6 +4,7 @@ import NextJS from "./icons/NextJS.astro"
 import Tailwind from "./icons/Tailwind.astro"
 import Link from "./icons/Link.astro"
 import LinkButton from "./LinkButton.astro"
+const BASE_URL = "/portfolio-qa";
 
 const TAGS = {
   NEXT: {
@@ -24,7 +25,7 @@ const PROJECTS = [
       "SVG logo library of the most popular brands. 10k+ monthly visits. 2k+ SVGs downloaded. Built from scratch with Next.js, React, and Tailwind CSS.",
     link: "https://svgl.vercel.app/",
     github: "https://github.com/pheralb/svgl",
-    image: "/projects/svgl.webp",
+    image: `${BASE_URL}/projects/svgl.webp`,
     tags: [TAGS.NEXT, TAGS.TAILWIND],
   },
   {
@@ -32,7 +33,7 @@ const PROJECTS = [
     description:
       "Free platform with programming challenges. Over 1 million visits in one month. 50k+ challenges completed. Built from scratch with Next.js, React, and Tailwind CSS.",
     link: "https://adventjs.dev",
-    image: "/projects/adventjs.webp",
+    image: `${BASE_URL}/projects/adventjs.webp`,
     tags: [TAGS.NEXT, TAGS.TAILWIND],
   },
 ]
